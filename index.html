@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Language Translator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+      margin-bottom: 10px;
+    }
+    select, button {
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Language Translator</h1>
+  <textarea id="inputText" placeholder="Enter text to translate"></textarea>
+  <select id="targetLanguage">
+    <option value="es">Spanish</option>
+    <option value="fr">French</option>
+    <option value="de">German</option>
+    <option value="zh">Chinese</option>
+    <option value="ja">Japanese</option>
+  </select>
+  <button onclick="translateText()">Translate</button>
+  <h2>Translated Text:</h2>
+  <p id="translatedText"></p>
+
+  <script>
+    async function translateText() {
+      const inputText = document.getElementById('inputText').value;
+      const targetLanguage = document.getElementById('targetLanguage').value;
+
+      // Replace with your translation API endpoint
+     
